@@ -1,0 +1,243 @@
+/******************************************* DOCUMENT INFORMATION
+    -Document: Kome waza
+    -Version: 2.0.0
+    Author: Nicolas
+****************************************************************/
+
+/******************************************* COLORS
+    -defaut body text:  #003E52
+    -h1                 #003E52
+    -h2                 #003E52
+    -h3                 #003E52
+
+    Menu Hover -        #6cadc2
+    Textes :            #003E52
+*****************************************************/
+
+/******************************************* FOOTER
+    Couleur arrière-plan : #003e52
+    Couleur typo : blanc
+    Hauteur 200px
+
+*****************************************************/
+
+/******************************************* NAV ***********************************************/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav i{
+    visibility: hidden;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul a{
+    text-decoration: none;
+    color: #003e52;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+a :hover{
+    transform: scale(1.5);
+    transition: 1.2s;
+    color: #6cadc2;
+}
+
+/******************************************* BODY ***********************************************/
+
+body{
+    font-family: roboto-thin;
+    transition: (2s);
+    color: #003e52;
+}
+
+
+
+/******************************************* EN TETE ***********************************************/
+
+.entete img{
+    width: 100vw;
+}
+
+/******************************************* EPICES ***********************************************/
+
+.epices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+/******************************************* SLIDER ***********************************************/
+
+.slider img{
+    width: 100vw;
+}
+
+.slider-texte{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-flow: column;
+}
+
+.slider-texte h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ol li{
+    display: flex;
+    flex-direction: column;
+}
+
+.sushi img{
+    width: 100vw;
+}
+
+/******************************************* FOOTER ***********************************************/
+
+.carte iframe{
+    width: 100vw;
+    filter: grayscale(100%);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #003e52;
+    height: 200px;
+
+}
+
+.contact{
+    padding-bottom: 20px;
+    color: white;
+}
+
+.numero{
+    color: white;
+}
+
+/******************************************* MEDIA QUERIE ***********************************************/
+
+@media screen and (max-width: 576px){
+
+   body{
+    width: 100vw;
+    
+   }
+
+   .epices{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+   .slider{
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+   }
+
+   .sushi{
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+   }
+
+   .epices-texte{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 20px;
+   }
+
+   .carte{
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+   }
+
+   .footer{
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    
+   }
+
+   .epices-texte h1{
+    text-align: center;
+   }
+
+   .epices-texte h3{
+    text-align: center;
+   }
+
+   nav {
+    display: flex;
+    padding: 20px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100vw;
+  }
+
+  nav i{
+    color: #003e52;
+    visibility: visible;
+  }
+
+  .entete img{
+    padding-top: 200px;
+  }
+
+    
+}
+
+@media screen and (max-width: 1024px){
+    nav {
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .entete img{
+        padding-top: 200px;
+      }
+
+    .epices-texte{
+        margin-right: 20px;
+    }
+
+    .entete{
+        margin-right: 10px;
+    }
+}
